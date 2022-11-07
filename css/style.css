@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Quicksand:wght@400;700&display=swap');
+
+
+:root {
+    --main-font-family: 'Cutive Mono', monospace; 
+    --heading-font-family: 'Quicksand', sans-serif;
+
+    --primary-color: #D96B6B;
+    --background-color: #2D1F1F;
+    --font-color-white: #FFFFFF;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--main-font-family);
+}
+
+header {
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--primary-color);
+    position: relative;
+    z-index: 0;
+}
+
+aside {
+    width: 19rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* .-.-.-.-.-.-.- HEADER // GENERAL .-.-.-.-.-.-.-.- */
+
+h1 {
+    font-family: var(--heading-font-family);
+    font-size: 12.5rem;
+    font-weight: 400;
+    text-align: center;
+    z-index: 1;
+}
+
+header p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.2rem 0;
+    z-index: 1;
+}
+
+.pink-bar {
+    width: 3.8rem;
+    background-color: var(--primary-color);
+}
+
+.top-left, .bottom-right {
+    transition: 500ms;
+}
+
+.top-left:hover,
+.bottom-right:hover {
+    background-color: var(--primary-color);
+    color: var(--font-color-white);
+}
+
+/* .-.-.-.-.-.-.- HEADER // TOP LEFT .-.-.-.-.-.-.-.- */
+
+.top-left .logo-link {
+    color: var(--font-color-white);
+}
+
+.top-left .pink-bar {
+    height: 5.6rem;
+}
+
+/* .-.-.-.-.-.-.- HEADER // BOTTOM-RIGHT .-.-.-.-.-.-.-.- */
+
+.bottom-right {
+    justify-content: end;
+    align-self: end;
+}
+
+.bottom-right .pink-bar {
+    height: 12.5rem;
+}
+
+.bottom-right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    /* padding-left: 2rem; */
+}
+
+.bottom-right a {
+    color: inherit;
+}
+
+.bottom-right a:hover {
+    padding: 0.5rem;
+    border: solid 2px white;
+}
+
+/* .-.-.-.-.-.-.- BUBBLES .-.-.-.-.-.-.-.- */
+
+.bubble {
+    border-radius: 50%;
+    background-color: #D96B6B;
+    box-shadow: inset 5px 5px 10px rgb(42, 13, 13);
+    opacity: 0;
+    z-index: -1;
+    animation: pulse 4s;
+}
+
+@keyframes pulse {
+    0% {    opacity:    0%;    }
+    30% {   opacity:    23%;  }
+    60% {   opacity:    23%;  }
+    100% { opacity: 0%;}
+
+}
+
+.one {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    animation-delay: 1s;
+}
+
+.two {
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 15%;
+    right: 18%;
+    animation-delay: 2300ms;
+}
+
+.three {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 52%;
+    left: 8%;
+    animation-delay: 1600ms;
+}
+
