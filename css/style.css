@@ -44,8 +44,14 @@ h1 {
     font-family: var(--heading-font-family);
     font-size: 12.5rem;
     font-weight: 400;
-    text-align: center;
     z-index: 1;
+}
+
+.h1-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header p {
@@ -76,7 +82,7 @@ header p {
     color: var(--font-color-white);
 }
 
-.top-left .pink-bar {
+.pink-bar--left {
     height: 5.6rem;
 }
 
@@ -87,7 +93,7 @@ header p {
     align-self: end;
 }
 
-.bottom-right .pink-bar {
+.pink-bar--right {
     height: 12.5rem;
 }
 
@@ -113,44 +119,63 @@ header p {
 .bubble {
     border-radius: 50%;
     background-color: #D96B6B;
-    box-shadow: inset 5px 5px 10px rgb(42, 13, 13);
     opacity: 0;
     z-index: -1;
-    animation: pulse 4s;
+    animation: bubbles 5s;
 }
 
-@keyframes pulse {
-    0% {    opacity:    0%;    }
-    30% {   opacity:    23%;  }
-    60% {   opacity:    23%;  }
-    100% { opacity: 0%;}
-
+.bubble--xxsmall {
+    height: 140px;
+    width: 140px;
+    box-shadow: inset 0px 0px 50px #1A0404;
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    animation-delay: 600ms;
 }
 
-.one {
+.bubble--xsmall {
     height: 100px;
     width: 100px;
+    box-shadow: inset 0px 0px 50px #1A0404;
     position: absolute;
     top: 30%;
     left: 16%;
     animation-delay: 1s;
 }
 
-.two {
+.bubble--small {
+    height: 120px;
+    width: 120px;
+    box-shadow: inset 0px 0px 60px #1A0404;
+    position: absolute;
+    top: 37%;
+    left: 40%;
+}
+
+.bubble--medium {
     height: 170px;
     width: 170px;
+    box-shadow: inset 0px 0px 70px #1A0404;
     position: absolute;
     top: 15%;
     right: 18%;
     animation-delay: 2300ms;
 }
 
-.three {
+.bubble--large {
     height: 200px;
     width: 200px;
+    box-shadow: inset 0px 0px 84px #1A0404;
     position: absolute;
     top: 52%;
     left: 8%;
     animation-delay: 1600ms;
 }
 
+@keyframes bubbles {
+    0%   {  opacity:    0%;     scale: 0%;             }
+    10%  {  opacity:    60%;    transform: scale(60%); }
+    30%  {  opacity:    30%;    transform: scale(160%);}
+    100% {  opacity:    0%;                            }
+}
