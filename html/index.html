@@ -14,8 +14,8 @@
             <a href="index.html" class="logo-link">cecilialjungquist.se</a>
         </aside>
         <div class="h1-wrapper">
-            <h1 class="auto-typing">Hello,</h1>
-            <p>im cecilia, a frontend developer and designer</p>
+            <h1 class="h1--huge">Hello,</h1>
+            <p class="h1__p">im cecilia, a frontend developer and designer</p>
         </div>
         <aside class="bottom-right">
             <nav>
@@ -34,23 +34,53 @@
         <div class="bubble bubble--large"></div>
     </header>
 
-    <main>
-        <h2>ive got 99 problems but a grid aint one</h2>
-        <p>supported by unsplash.com</p>
+    <div class="wrapper">
 
-        <section class="img-grid">
-            <a target="_blank" href="https://unsplash.com/photos/0ClfreiNppM"><img src="../images/tiffany-nutt-0ClfreiNppM-unsplash.jpg" alt="Photograf of colorful bike against a white brick wall."></a>
-            <a target="_blank" href="https://unsplash.com/photos/s6xt1mwF_iU"><img src="../images/anthony-reungere-s6xt1mwF_iU-unsplash.jpg" alt="Picture of a city street."></a>
-            <a target="_blank" href="https://unsplash.com/photos/xe-ss5Tg2mo"><img src="../images/pawel-nolbert-xe-ss5Tg2mo-unsplash.jpg" alt=""></a>
-            <a target="_blank" href="https://unsplash.com/photos/5cwigXmGWTo"><img src="../images/ivan-bandura-5cwigXmGWTo-unsplash.jpg" alt=""></a>
-            <a target="_blank" href="https://unsplash.com/photos/7Y0NshQLohk"><img src="../images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg" alt=""></a>
-            <a target="_blank" href="https://unsplash.com/photos/MqT0asuoIcU"><img src="../images/chad-montano-MqT0asuoIcU-unsplash.jpg" alt=""></a>
-            <a target="_blank" href="https://unsplash.com/photos/zUNs99PGDg0"><img src="../images/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" alt=""></a>
-            <a target="_blank" href="https://unsplash.com/photos/5Et1Ckv-olE"><img src="../images/dawid-zawila-5Et1Ckv-olE-unsplash.jpg" alt=""></a>
-            <a target="_blank" href="https://unsplash.com/photos/qzgN45hseN0"><img src="../images/geran-de-klerk-qzgN45hseN0-unsplash.jpg" alt=""></a>
-        </section>
-
-    </main>
+        <main>
+            <article class="img-grid__section">
+                <h2 class="h2--grid">ive got 99 problems but a grid aint one</h2>
+                <div class="line"></div>
+                <p class="img-grid__p">supported by <a class="source-link" target="_blank" href="https://unsplash.com/">unsplash.com</a></p>
+        
+                <section class="img-grid">
+                    <a target="_blank" href="https://unsplash.com/photos/0ClfreiNppM"><img src="../images/tiffany-nutt-0ClfreiNppM-unsplash.jpg" alt="Photograf of colorful bike against a white brick wall."></a>
+                    <a class="grid-2-col" target="_blank" href="https://unsplash.com/photos/5Et1Ckv-olE"><img src="../images/dawid-zawila-5Et1Ckv-olE-unsplash.jpg" alt=""></a>
+                    <a target="_blank" href="https://unsplash.com/photos/s6xt1mwF_iU"><img src="../images/anthony-reungere-s6xt1mwF_iU-unsplash.jpg" alt="Picture of a city street."></a>
+                    <a class="grid-2-col" href="https://unsplash.com/photos/ydh2Q5vJ5DU"><img src="../images/aaron-lee-ydh2Q5vJ5DU-unsplash.jpg" alt=""></a>
+                    <a target="_blank" href="https://unsplash.com/photos/7Y0NshQLohk"><img src="../images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg" alt=""></a>
+                    <a class="grid-3-row" target="_blank" href="https://unsplash.com/photos/5cwigXmGWTo"><img src="../images/ivan-bandura-5cwigXmGWTo-unsplash.jpg" alt=""></a>
+                    <a target="_blank" href="https://unsplash.com/photos/xe-ss5Tg2mo"><img src="../images/pawel-nolbert-xe-ss5Tg2mo-unsplash.jpg" alt=""></a>
+                    <a target="_blank" href="https://unsplash.com/photos/MqT0asuoIcU"><img src="../images/chad-montano-MqT0asuoIcU-unsplash.jpg" alt=""></a>
+                    <a class="grid-2-row" target="_blank" href="https://unsplash.com/photos/zUNs99PGDg0"><img src="../images/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" alt=""></a>
+                    <a class="grid-2-col" target="_blank" href="https://unsplash.com/photos/qzgN45hseN0"><img src="../images/geran-de-klerk-qzgN45hseN0-unsplash.jpg" alt=""></a>
+                </section>
+            </article>
+    
+            <article class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vel laboriosam recusandae, ab nisi quisquam eveniet! Culpa ducimus repellendus, dolore exercitationem suscipit expedita veniam atque ad et, quod magnam vel!</p>
+            </article>
+    
+            <section class="cardstack">
+                <article class="card figma">
+                    <h3>figma</h3>
+                    <div class="line line--small"></div>
+                    <p class="img-grid__p">visit me at <a class="source-link" target="_blank" href="#">figma.com</a></p>
+                </article>
+                <article class="card github">
+                    <h3>github</h3>
+                    <div class="line line--small"></div>
+                    <p class="img-grid__p">visit me at <a class="source-link" target="_blank" href="#">github.com</a></p>
+                </article>
+                <article class="card lunarstorm">
+                    <h3>lunarstorm</h3>
+                    <div class="line line--small"></div>
+                    <p class="img-grid__p">visit me at <a class="source-link" target="_blank" href="#">lunarstorm.com</a></p>
+                </article>
+    
+            </section>
+    
+        </main>
+    </div>
 
 </body>
 </html>
