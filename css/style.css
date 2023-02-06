@@ -227,7 +227,7 @@ p {
 }
 
 .line {
-    width: 40rem;
+    max-width: 40rem;
     height: 2px;
     background-color: #D96B6B;
     margin: auto;
@@ -281,6 +281,11 @@ img {
     margin: 6rem auto;
 }
 
+.p--footer {
+    opacity: .5;
+    text-align: center;
+}
+
 /* .-.-.-.-.-.-.- CARD .-.-.-.-.-.-.-.- */
 
 .cardstack {
@@ -314,4 +319,31 @@ img {
     10%  {  opacity:    60%;    transform: scale(60%); }
     30%  {  opacity:    30%;    transform: scale(160%);}
     100% {  opacity:    0%;                            }
+}
+
+@media screen and (max-width: 700px){
+    .h1--huge {
+        font-size: 12rem;
+    }
+    
+    main {
+        padding: 6rem .5rem;
+    }
+    .about {
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .h2--grid {
+        font-size: 3rem;
+    }
 }
