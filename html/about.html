@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body-margin">
+    <div class="main-navigation__wrapper">
+        <nav class="main-navigation">
+            <a href="index.html">home</a>
+            <a href="#">my work</a>
+            <a href="#">contact</a>
+            <a href="#">about</a>
+        </nav>
+    </div>
     <!-- HERO -->
     <header class="hero--about">
         <aside class="top-left">
@@ -21,10 +29,39 @@
         <main class="about">
             <h1 class="h1--about">about me</h1>
             <section class="about__section">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea possimus totam mollitia maxime error, quaerat ad consectetur animi natus consequuntur nulla eveniet. At odio quasi dignissimos. Temporibus eos modi possimus!</p>
-                
+                <section class="info-text">
+                    <p>hi, my name is cecilia ljungquist and im a 32 years old frontend developer and web designer in the making. i was borned and raised in karlstad, värmland, 
+                        but ive spent almost ten years in gothenburg so one could say that im 1/3 håkan hellström and 2/3 sven erik magnusson. today i live in malmö, but id have to say that there is zero zlatan in me.
+                    </p>
+                    <p>im currently on my second semester of four to become a junior frontend developer. so far, the journey has been amazing. 
+                        i think i wrote my first line of code in januari 2022 in matlab while 
+                        i was studing construction engineering (at the time i was still confused about chosing my career). since then the list of discoveries has become quite long, but the biggest of them all is how much i 
+                        absolutely love the craftmanship that frontend development holds, which for me means the perfect mix between visual creativity and logic.    
+                    </p>
+                </section>
+                <img class="profile-img" src="../mypics/victor-grabarczyk-N04FIfHhv_k-unsplash.jpg" alt="Cute dog.">
+            </section>
+            <section class="cardstack">
+                <article class="card">
+                    <h3>interests</h3>
+                    <div class="line line--small"></div>
+                    <p>figma + crocheting + cooking + eating + music + reading</p>
+                </article>
+                <article class="card">
+                    <h3>worklife</h3>
+                    <div class="line line--small"></div>
+                    <p>leadership + visual merchandising + store management + human resources + sales</p>
+                </article>
+                <article class="card">
+                    <h3>education</h3>
+                    <div class="line line--small"></div>
+                    <p>html + css + programming + figma + UX/UI</p>
+                </article>
             </section>
         </main>
+        <footer>
+            <p class="p--footer">made by cecilialjungquist 2023</p>
+        </footer>
     </div>
 </body>
 </html>
