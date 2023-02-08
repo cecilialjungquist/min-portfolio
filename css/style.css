@@ -358,7 +358,11 @@ p {
     flex: 2;
     cursor: pointer;
 }
-
+.github:hover a h3, 
+.figma:hover a h3,
+.linkedin:hover a h3 {
+    color: var(--primary-color);
+}
 
 
 @keyframes bubbles {
