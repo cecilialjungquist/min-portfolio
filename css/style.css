@@ -51,10 +51,45 @@ aside {
     gap: 4rem;
 }
 
-p {
+form {
+    padding-bottom: 1.6rem;
+}
+
+input {
+    width: 10rem;
+    border: none;
+    padding: .5rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: #ffffff15;
+    text-align: center;
+}
+input::-webkit-inner-spin-button {
+    display: none;
+}
+input:focus {
+    outline: none;
+}
+
+p, label {
     color: var(--font-color-white);
     line-height: 1.5em;
     padding: 1em 0;
+}
+
+button {
+    padding: 1.2rem 2.4rem;
+    appearance: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: var(--font-color-white);
+}
+button:hover {
+    color: var(--background-color);
+}
+button:active {
+    color: var(--font-color-white);
 }
 
 .wrapper {
@@ -290,11 +325,13 @@ p {
     background-color: var(--background-color);
     padding: 1.5em;
     border: 3px solid var(--primary-color);
+    text-align: center;
+    box-shadow: 0px 4px 10px #1a040456;
 }
 
 .img-grid {
     display: grid;
-    justify-content:center ;
+    justify-content: center ;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-auto-rows: 15rem;
@@ -318,12 +355,23 @@ p {
     grid-column: span 2;
 }
 
+.loader {
+    width: 100px;
+    animation: spinner 600ms ease-in infinite;
+}
+
 /* .-.-.-.-.-.-.- TEXT .-.-.-.-.-.-.-.- */
 
 .text {
     max-width: 50rem;
     text-align: center;
     margin: 6rem auto;
+}
+
+.help-text {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    padding: 1rem 0 0;
 }
 
 .p--footer {
@@ -346,6 +394,7 @@ p {
     text-align: center;
     padding: 2rem;
     transition: all 500ms;
+    box-shadow: 0px 4px 10px #1a040456;
 }
 
 .line--small {
@@ -365,11 +414,25 @@ p {
 }
 
 
+/* .-.-.-.-.-.-.- UTILITY CLASSES .-.-.-.-.-.-.-.- */
+
+.hide {
+    display: none;
+}
+
 @keyframes bubbles {
     0%   {  opacity:    0%;     scale: 0%;             }
     10%  {  opacity:    60%;    transform: scale(60%); }
     30%  {  opacity:    30%;    transform: scale(160%);}
     100% {  opacity:    0%;                            }
+}
+
+@keyframes spinner {
+    0%  { transform: rotateZ(0deg);     opacity: .2; }
+    25% { transform: rotateZ(90deg); }
+    50% { transform: rotateZ(180deg);   opacity: 1;}
+    75% { transform: rotateZ(270deg); }
+    100% { transform: rotateZ(360deg);  opacity: .2; }
 }
 
 @media screen and (max-width: 768px){
