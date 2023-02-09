@@ -51,14 +51,30 @@ aside {
     gap: 4rem;
 }
 
-p {
+input {
+    width: 8rem;
+    border: none;
+    padding: .5rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: #ffffff15;
+    text-align: center;
+}
+input::-webkit-inner-spin-button {
+    display: none;
+}
+input:focus {
+    outline: none;
+}
+
+p, label {
     color: var(--font-color-white);
     line-height: 1.5em;
     padding: 1em 0;
 }
 
 button {
-    padding: 1rem 2rem;
+    padding: 1.2rem 2.4rem;
     appearance: none;
     border: none;
     border-radius: 1rem;
