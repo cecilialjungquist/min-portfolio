@@ -25,6 +25,7 @@
 
 body {
     background-color: var(--background-color);
+    min-height: 100vh;
 }
 
 h1 {
@@ -403,6 +404,11 @@ button:active {
     color: var(--primary-color);
 }
 
+/* .-.-.-.-.-.-.- FOOTER .-.-.-.-.-.-.-.- */
+
+.footer--contact {
+    margin-top: 40vh;
+}
 
 /* .-.-.-.-.-.-.- UTILITY CLASSES .-.-.-.-.-.-.-.- */
 
