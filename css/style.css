@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Quicksand:wght@400;700&display=swap');
 
 
-:root,
-:root.light {
+:root {
     font-size: 62.5%;
 
     --main-font-family: 'Cutive Mono', monospace; 
@@ -10,7 +9,15 @@
 
     --primary-color: #D96B6B;
     --background-color: #2D1F1F;
-    --font-color-white: #FFFFFF;
+    --font-color: #f1eadf;
+    --box-shadow: #1a040456;
+}
+
+.light-mode {
+    --primary-color: #D96B6B;
+    --background-color: #f1eadf;
+    --font-color: #2D1F1F;
+    --box-shadow: #79654d48;
 }
 
 * {
@@ -19,7 +26,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    color: var(--font-color-white);
+    color: var(--font-color);
     font-family: var(--main-font-family);
     font-size: 1.6rem;
 }
@@ -93,7 +100,7 @@ button:hover {
     color: var(--background-color);
 }
 button:active {
-    color: var(--font-color-white);
+    color: var(--font-color);
 }
 
 .wrapper {
@@ -199,7 +206,7 @@ button:active {
 .bottom-right a:hover,
 .main-navigation a:hover {
     padding: .8em;
-    border: solid 2px var(--font-color-white);
+    border: solid 2px var(--font-color);
 }
 
 /* .-.-.-.-.-.-.- ABOUT .-.-.-.-.-.-.-.- */
@@ -221,6 +228,7 @@ button:active {
 
 .github-svg path,
 .linkedin-svg path {
+    fill: var(--font-color);
     transition: fill 500ms;
 }
 
@@ -236,7 +244,7 @@ button:active {
 
 .bubble {
     border-radius: 50%;
-    background-color: #D96B6B;
+    background-color: var(--primary-color);
     opacity: 0;
     z-index: -1;
     animation: bubbles 5s;
@@ -245,7 +253,7 @@ button:active {
 .bubble--xxsmall {
     height: 140px;
     width: 140px;
-    box-shadow: inset 0px 0px 50px #1A0404;
+    box-shadow: inset 0px 0px 50px var(--background-color);
     position: absolute;
     top: 50%;
     left: 57%;
@@ -255,7 +263,7 @@ button:active {
 .bubble--xsmall {
     height: 100px;
     width: 100px;
-    box-shadow: inset 0px 0px 50px #1A0404;
+    box-shadow: inset 0px 0px 50px var(--background-color);
     position: absolute;
     top: 30%;
     left: 16%;
@@ -265,7 +273,7 @@ button:active {
 .bubble--small {
     height: 120px;
     width: 120px;
-    box-shadow: inset 0px 0px 60px #1A0404;
+    box-shadow: inset 0px 0px 60px var(--background-color);
     position: absolute;
     top: 37%;
     left: 40%;
@@ -274,7 +282,7 @@ button:active {
 .bubble--medium {
     height: 170px;
     width: 170px;
-    box-shadow: inset 0px 0px 70px #1A0404;
+    box-shadow: inset 0px 0px 70px var(--background-color);
     position: absolute;
     top: 15%;
     right: 18%;
@@ -284,7 +292,7 @@ button:active {
 .bubble--large {
     height: 200px;
     width: 200px;
-    box-shadow: inset 0px 0px 84px #1A0404;
+    box-shadow: inset 0px 0px 84px var(--background-color);
     position: absolute;
     top: 52%;
     left: 8%;
@@ -305,12 +313,13 @@ button:active {
 .line {
     max-width: 40rem;
     height: 2px;
-    background-color: #D96B6B;
+    background-color: var(--primary-color);
     margin: auto;
 }
 
 .source-link:hover {
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .img-grid__section {
@@ -319,7 +328,7 @@ button:active {
     padding: 1.5em;
     border: 3px solid var(--primary-color);
     text-align: center;
-    box-shadow: 0px 4px 10px #1a040456;
+    box-shadow: 0px 4px 10px var(--box-shadow);
 }
 
 .img-grid {
@@ -392,7 +401,7 @@ button:active {
     text-align: center;
     padding: 2rem;
     transition: all 500ms;
-    box-shadow: 0px 4px 10px #1a040456;
+    box-shadow: 0px 4px 10px var(--box-shadow);
 }
 
 .card--my-work {
@@ -467,11 +476,21 @@ button:active {
     background-color: #1A0404;
 }
 
+/* .-.-.-.-.-.-.- MODE-TOGGLE .-.-.-.-.-.-.-.- */
+
+#theme-toggle:hover {
+    cursor: pointer;
+}
 
 /* .-.-.-.-.-.-.- FOOTER .-.-.-.-.-.-.-.- */
 
 .footer--contact {
     margin-top: 40vh;
+}
+
+footer {
+    display: grid;
+    justify-items: center;
 }
 
 /* .-.-.-.-.-.-.- UTILITY CLASSES .-.-.-.-.-.-.-.- */
