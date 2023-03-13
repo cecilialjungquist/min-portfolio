@@ -200,6 +200,7 @@ button:active {
     padding: .8em;
     border: solid 2px var(--font-color-white);
 }
+
 /* .-.-.-.-.-.-.- ABOUT .-.-.-.-.-.-.-.- */
 
 .about__section {
@@ -378,6 +379,11 @@ button:active {
     gap: 2rem;
 }
 
+.cardstack--my-work {
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
 .card {
     border: 1px solid var(--primary-color);
     min-width: 30rem;
@@ -386,6 +392,33 @@ button:active {
     padding: 2rem;
     transition: all 500ms;
     box-shadow: 0px 4px 10px #1a040456;
+}
+
+.card--my-work {
+    display: flex;
+    gap: 1rem;
+}
+
+.card--my-work:nth-child(even) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.card__img-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__img {
+    width: 100%;
+    min-width: 250px;
+}
+
+.card__info {
+    flex: 1;
+    padding: 0 2rem;
 }
 
 .line--small {
@@ -400,7 +433,8 @@ button:active {
 }
 .github:hover a h3, 
 .figma:hover a h3,
-.linkedin:hover a h3 {
+.linkedin:hover a h3,
+.my-work .card:hover .card__info h3 {
     color: var(--primary-color);
 }
 
@@ -450,6 +484,9 @@ button:active {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .card--my-work {
+        flex-direction: column;
     }
 }
 
