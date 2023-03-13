@@ -401,7 +401,6 @@ button:active {
 
 .card--my-work:nth-child(even) {
     flex-direction: row-reverse;
-    flex-wrap: wrap;
 }
 
 .card__img-container {
@@ -411,9 +410,18 @@ button:active {
     gap: 1rem;
 }
 
+.card__img-container--flex-row {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .card__img {
     width: 100%;
-    min-width: 250px;
+    object-fit: cover;
+}
+
+.card__img-container--flex-row img {
+    width: 45%;
 }
 
 .card__info {
@@ -485,8 +493,12 @@ button:active {
         flex-direction: column;
         justify-content: center;
     }
-    .card--my-work {
+    .card--my-work,
+    .card--my-work:nth-child(even) {
         flex-direction: column;
+    }
+    .card__info {
+        padding: 0;
     }
 }
 
