@@ -304,10 +304,22 @@ button:active {
 .hamburger {
     position: absolute;
     top: .5rem;
-    right: .5rem;
+    right: 0;
     width: fit-content;
     display: none;
     padding: 1rem;
+}
+
+.hamburger-nav {
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    padding: 2rem 4rem;
+}
+
+.hamburger-nav p:active {
+    color: var(--primary-color);
 }
 
 /* .-.-.-.-.-.-.- IMG-GRID .-.-.-.-.-.-.-.- */
@@ -538,7 +550,7 @@ footer {
     main {
         padding: 6rem .5rem;
     }
-    .about {
+    .about, .my-work, .contact {
         text-align: center;
     }
     .about__section {
