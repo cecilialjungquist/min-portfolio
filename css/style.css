@@ -299,6 +299,17 @@ button:active {
     animation-delay: 1600ms;
 }
 
+/* .-.-.-.-.-.-.- HAMBURGER .-.-.-.-.-.-.-.- */
+
+.hamburger {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    width: fit-content;
+    display: none;
+    padding: 1rem;
+}
+
 /* .-.-.-.-.-.-.- IMG-GRID .-.-.-.-.-.-.-.- */
 
 .h2--grid {
@@ -499,6 +510,8 @@ footer {
     display: none;
 }
 
+/* .-.-.-.-.-.-.- KEY FRAMES .-.-.-.-.-.-.-.- */
+
 @keyframes bubbles {
     0%   {  opacity:    0%;     scale: 0%;             }
     10%  {  opacity:    60%;    transform: scale(60%); }
@@ -513,6 +526,9 @@ footer {
     75% { transform: rotateZ(270deg); }
     100% { transform: rotateZ(360deg);  opacity: .2; }
 }
+
+
+/* .-.-.-.-.-.-.- MEDIA QUERIES .-.-.-.-.-.-.-.- */
 
 @media screen and (max-width: 768px){
     .h1--huge {
@@ -545,6 +561,23 @@ footer {
         max-width: 90vw;
         max-height: 90vh;
         background-color: #1A0404;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-navigation__wrapper,
+    .top-left,
+    .bottom-right {
+        display: none;
+    }
+    .hero {
+        justify-content: center;
+    }
+    .body-margin {
+        margin-right: 0;
+    }
+    .hamburger {
+        display: block;
     }
 }
 
