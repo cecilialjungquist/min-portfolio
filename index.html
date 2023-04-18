@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>cecilialjungquist</title>
+</head>
+<body>
+    <!-- HERO -->
+    <header class="hero">
+        <aside class="top-left">
+            <div class="pink-bar pink-bar--left"></div>
+            <a href="index.html" class="logo-link">cecilialjungquist.se</a>
+        </aside>
+        <!-- HAMBURGER -->
+        <aside class="top-right hamburger">
+            <img src="mypics/hamburger.svg" alt="hamburger menu icon">
+        </aside>
+        <div class="h1-wrapper">
+            <h1 class="h1--huge">Hello,</h1>
+            <p class="h1__p">im cecilia, a junior frontend developer and web designer in the making</p>
+        </div>
+        <aside class="bottom-right">
+            <nav>
+                <ul>
+                    <li><a href="html/my-work.html">check out my work</a></li>
+                    <li><a href="html/contact.html">contact</a></li>
+                    <li><a href="html/about.html">about me</a></li>
+                </ul>
+            </nav>
+            <div class="pink-bar pink-bar--right"></div>
+        </aside>
+        <div class="bubble bubble--xxsmall"></div>
+        <div class="bubble bubble--xsmall"></div>
+        <div class="bubble bubble--small"></div>
+        <div class="bubble bubble--medium"></div>
+        <div class="bubble bubble--large"></div>
+    </header>
+    <!-- WRAPPER -->
+    <div class="wrapper">
+
+        <main>
+            <article class="img-grid__section">
+                <h2 class="h2--grid">ive got 99 problems but a grid aint one</h2>
+                <div class="line"></div>
+                <p class="img-grid__p">supported by <a class="source-link" target="_blank" href="https://unsplash.com/">unsplash.com</a></p>
+
+                <section class="img-grid">
+                    <a target="_blank" href="https://unsplash.com/photos/0ClfreiNppM"><img src="img-small/tiffany-nutt-0ClfreiNppM-unsplash.jpg" alt="Photograf of colorful bike against a white brick wall."></a>
+                    <a class="grid-2-col" target="_blank" href="https://unsplash.com/photos/5Et1Ckv-olE"><img src="img-small/dawid-zawila-5Et1Ckv-olE-unsplash.jpg" alt=""></a>
+                    <a target="_blank" href="https://unsplash.com/photos/s6xt1mwF_iU"><img src="img-small/anthony-reungere-s6xt1mwF_iU-unsplash.jpg" alt="Picture of a city street."></a>
+                    <a class="grid-2-col" href="https://unsplash.com/photos/ydh2Q5vJ5DU"><img src="img-small/aaron-lee-ydh2Q5vJ5DU-unsplash.jpg" alt=""></a>
+                    <a target="_blank" href="https://unsplash.com/photos/7Y0NshQLohk"><img src="img-small/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg" alt=""></a>
+                    <a class="grid-3-row" target="_blank" href="https://unsplash.com/photos/5cwigXmGWTo"><img src="img-small/ivan-bandura-5cwigXmGWTo-unsplash.jpg" alt=""></a>
+                    <a target="_blank" href="https://unsplash.com/photos/xe-ss5Tg2mo"><img src="img-small/pawel-nolbert-xe-ss5Tg2mo-unsplash.jpg" alt=""></a>
+                    <a target="_blank" href="https://unsplash.com/photos/MqT0asuoIcU"><img src="img-small/chad-montano-MqT0asuoIcU-unsplash.jpg" alt=""></a>
+                    <a class="grid-2-row" target="_blank" href="https://unsplash.com/photos/zUNs99PGDg0"><img src="img-small/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" alt=""></a>
+                    <a class="grid-2-col" target="_blank" href="https://unsplash.com/photos/qzgN45hseN0"><img src="img-small/geran-de-klerk-qzgN45hseN0-unsplash.jpg" alt=""></a>
+                </section>
+            </article>
+    
+            <article class="text">
+                <form>
+                    <label for="number">choose a positiv number:</label>
+                    <input type="number" name="number" id="num-input" placeholder="e.g. 43" min="0">
+                </form>
+                <button id="fetch-api-btn">click me for fun fact about numbers</button>
+                <p id="api-container"></p>
+            </article>
+    
+            <section class="cardstack">
+                <article class="card figma">
+                    <a target="_blank" href="https://www.figma.com/file/JdPs6yHJx8TcBdLQNztdKe/winter-views?node-id=0%3A1&t=ICFxDA6sBnVAKUdB-1">
+                        <h3>figma</h3>
+                        <div class="line line--small"></div>
+                        <p class="img-grid__p">see my latest designs</p>
+                    </a>
+                </article>
+                <article class="card github">
+                    <a target="_blank" href="https://github.com/cecilialjungquist">
+                        <h3>github</h3>
+                        <div class="line line--small"></div>
+                        <p class="img-grid__p">check out my repositories</p>
+                    </a>
+                </article>
+                <article class="card linkedin">
+                    <a target="_blank" href="https://www.linkedin.com/in/cecilia-ljungquist/">
+                        <h3>linkedin</h3>
+                        <div class="line line--small"></div>
+                        <p class="img-grid__p">visit my page</p>
+                    </a>
+                </article>
+            </section>
+    
+        </main>
+        <footer>
+            <img id="theme-toggle" src="mypics/light-mode.svg">
+            <p class="p--footer">made by cecilialjungquist 2023</p>
+        </footer>
+    </div>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/apis.js"></script>
+</body>
+</html>
