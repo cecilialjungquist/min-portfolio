@@ -1,7 +1,7 @@
 const apiContainer = document.getElementById('api-container');
 const notFoundMsgEl = document.createElement('p');
 const fetchAPIBtn = document.getElementById('fetch-api-btn');
-const BASE_URL = '//numbersapi.com/';
+const BASE_URL = 'https://numbersapi.com/';
 const END_URL = '/trivia?json'
 
 fetchAPIBtn.addEventListener('click', (event) =>{
