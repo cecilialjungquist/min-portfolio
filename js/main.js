@@ -48,11 +48,11 @@ function openMenu() {
             if (option === 'home') {
                 location.href = 'index.html';
             } else if (option === 'my work') {
-                location.href = 'my-work.html';
+                location.href = 'html/my-work.html';
             } else if (option === 'contact') {
-                location.href = 'contact.html'
+                location.href = 'html/contact.html'
             } else {
-                location.href = 'about.html';
+                location.href = 'html/about.html';
             }
 
         });
