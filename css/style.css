@@ -64,10 +64,6 @@ aside {
     gap: 4rem;
 }
 
-form {
-    padding-bottom: 1.6rem;
-}
-
 input {
     width: 10rem;
     border: none;
@@ -385,13 +381,19 @@ button:active {
     animation: spinner 600ms ease-in infinite;
 }
 
-/* .-.-.-.-.-.-.- TEXT .-.-.-.-.-.-.-.- */
+/* .-.-.-.-.-.-.- NUMBER API .-.-.-.-.-.-.-.- */
 
-.text {
+.number-api {
     max-width: 50rem;
     text-align: center;
     margin: 6rem auto;
 }
+
+.number-api section {
+    padding-bottom: 1.6rem;
+}
+
+/* .-.-.-.-.-.-.- TEXT .-.-.-.-.-.-.-.- */
 
 .help-text {
     color: var(--primary-color);
