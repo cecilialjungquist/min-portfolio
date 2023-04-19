@@ -5,7 +5,7 @@ lightboxLinks.forEach(link => link.addEventListener('click', () => openLightbox(
 function openLightbox(link) {
     let body = document.querySelector('body');
     let src = link.dataset.img;
-    src = `../img-projects/${src}`;
+    src = `img-projects/${src}`;
     
     let lightboxOverlay = document.createElement('section');
     let lightboxImg = document.createElement('img');
