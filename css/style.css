@@ -608,6 +608,9 @@ footer {
         max-height: 90vh;
         background-color: #1A0404;
     }
+    .contact section:first-of-type {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
