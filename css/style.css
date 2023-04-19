@@ -53,6 +53,13 @@ h3 {
     padding: 1em 0;
 }
 
+h4 {
+    font-family: var(--heading-font-family);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: .5em 0;
+}
+
 main {
     padding: 6rem 1rem;
 }
@@ -222,8 +229,11 @@ button:active {
     margin-bottom: 3rem;
 }
 
+/* .-.-.-.-.-.-.- SVG .-.-.-.-.-.-.-.- */
+
 .github-svg path,
-.linkedin-svg path {
+.linkedin-svg path, 
+.cv-svg path {
     fill: var(--font-color);
     transition: fill 500ms;
 }
@@ -232,7 +242,8 @@ button:active {
     margin-right: 1rem;
 }
 .github-svg:hover path, 
-.linkedin-svg:hover path {
+.linkedin-svg:hover path,
+.cv-svg:hover path {
     fill: var(--primary-color);
 }
 
@@ -318,6 +329,21 @@ button:active {
     color: var(--primary-color);
 }
 
+/* .-.-.-.-.-.-.- CONTACT .-.-.-.-.-.-.-.- */
+
+.contact section:first-of-type {
+    display: flex;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+.linkedin--contact,
+.cv--contact {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 /* .-.-.-.-.-.-.- IMG-GRID .-.-.-.-.-.-.-.- */
 
 .h2--grid {
@@ -380,6 +406,8 @@ button:active {
     width: 100px;
     animation: spinner 600ms ease-in infinite;
 }
+
+
 
 /* .-.-.-.-.-.-.- NUMBER API .-.-.-.-.-.-.-.- */
 
@@ -510,7 +538,11 @@ button:active {
 /* .-.-.-.-.-.-.- FOOTER .-.-.-.-.-.-.-.- */
 
 .footer--contact {
-    margin-top: 40vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 footer {
