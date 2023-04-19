@@ -1,3 +1,5 @@
+// Not valid with GitHub Pages.
+
 const apiContainer = document.getElementById('api-container');
 const notFoundMsgEl = document.createElement('p');
 const fetchAPIBtn = document.getElementById('fetch-api-btn');
