@@ -9,7 +9,7 @@ function checkTheme() {
     } else if (theme === 'light') {
         let body = document.querySelector('body');
         body.classList.add('light-mode');
-        themeToggle.src = '../mypics/dark-mode.svg';
+        themeToggle.src = 'mypics/dark-mode.svg';
         localStorage.setItem('theme', 'light');
     }
 }
@@ -22,11 +22,11 @@ function updateTheme() {
     
     if (theme === 'dark') {
         body.classList.add('light-mode');
-        themeToggle.src = '../mypics/dark-mode.svg';
+        themeToggle.src = 'mypics/dark-mode.svg';
         localStorage.setItem('theme', 'light');
     } else {
         body.classList.remove('light-mode');
-        themeToggle.src = '../mypics/light-mode.svg';
+        themeToggle.src = 'mypics/light-mode.svg';
         localStorage.setItem('theme', 'dark');
     }
 }
@@ -48,11 +48,11 @@ function openMenu() {
             if (option === 'home') {
                 location.href = 'index.html';
             } else if (option === 'my work') {
-                location.href = 'html/my-work.html';
+                location.href = 'my-work.html';
             } else if (option === 'contact') {
-                location.href = 'html/contact.html'
+                location.href = 'contact.html'
             } else {
-                location.href = 'html/about.html';
+                location.href = 'about.html';
             }
 
         });
