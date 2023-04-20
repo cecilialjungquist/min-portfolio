@@ -628,6 +628,9 @@ footer {
     .hamburger {
         display: block;
     }
+    #sized-img {
+        grid-column: span 2;
+    }
 }
 
 @media screen and (max-width: 425px) {
